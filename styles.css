@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light:#FBF7EE;
+    --dark:#1F2937;
+    --light-Text:#D2D2D2;
+    --light-heading-text:#FFFFFF;
+    --dark-heading-Text:#1A1921;
+    --dark-text:#4E4E4E;
+    --radius:5px;
+}
+
+/* ****************************************************************Layout********* */
+body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    /* background-color: var(--dark); */
+    background: #2980b9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+.metric-card{
+    width: 30%;
+    height: auto;
+    /* border: red solid 1px; */
+    font-family: 'Inter';
+    font-style: normal;
+    background:var(--light);
+    border-radius:var(--radius);
+}
+
+.heading{
+    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    display: flex;
+    flex-direction: column;
+    height: 12em;
+    align-items: center;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: var(--radius);
+}
+.variables{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.variables-block{
+    text-align: center;
+    /* background-color:red;
+     */
+     margin: 0.35em 0;
+     line-height: 1.5;
+}
+
+
+
+
+/* ********************************TypoGraphy******************************** */
+.heading{
+    color: #fff;
+}
+.heading-title{
+    /* font-family: 'Inter';
+     */
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 0.25em;
+}
+.heading-number{
+    font-weight: 900;
+    font-size: 6.098rem;
+}
+.variables-heading{
+    color: var(--dark-heading-text);
+    font-weight: 600;
+    font-size: 14px;
+}
+.variables-definition{
+    color: var(--dark-Text);
+    font-weight: 400;
+    font-size: 14px;
+}
